@@ -11,13 +11,13 @@ liczPodatek = function(x, FormaOpodatkowania){
   }
   
   if (FormaOpodatkowania == "Liniowa"){
-    return(0.19*x)
+    return(0.19 * x)
   } else if (FormaOpodatkowania == "Ogolna"){
     if (x <= 85528) {
-      return(0.18*x - 556)
+      return(0.18 * x - 556)
     }
     else{
-      return(0.32*(x-85528)+14839)
+      return(0.32 * (x - 85528) + 14839)
     }
   }
   else{
